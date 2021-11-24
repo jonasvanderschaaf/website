@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+    webserver:
+        build: ./webserver
+        ports:
+            - "8000:8000"
+        volumes:
+            - "./webserver/static:/server/static"
+            - "./webserver/templates:/server/templates"
